@@ -1,0 +1,22 @@
+.container-city-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 15px;
+    max-width: 600px;
+    max-height: 600px;
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff, #a0c4ff); /* Azul pastel */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 5px auto; /* Centrado */
+    backdrop-filter: blur(10px); /* Efecto de vidrio */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Bordes sutiles */
+}
+
+.container-city-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}

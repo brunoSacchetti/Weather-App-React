@@ -1,0 +1,92 @@
+#root {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body{
+  font-family: "Outfit", sans-serif;
+  background: rgba(202, 224, 243, 0.6); /* Azul muy claro con opacidad */
+  backdrop-filter: blur(10px);
+  color: #333; /* Texto oscuro para contraste */
+}
+
+.h1-weather-dashboard {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #4facfe; /* Azul degradado */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  background: linear-gradient(135deg, #35383a, #22c0c9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-input-btn-search{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  margin: 25px;
+}
+
+/* Estilos para el botón de búsqueda */
+.btn-search-city {
+  width: 120px;
+  height: 40px;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-search-city:hover {
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
+  transform: scale(1.05);
+}
+
+.btn-search-city:active {
+  transform: scale(0.95);
+}
+
+/* Estilos para el input */
+.input-city {
+  width: 60%;
+  height: 45px;
+  padding: 10px;
+  margin-left: 110px;
+  font-size: 16px;
+  border: 2px solid #4facfe;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  text-align: center; /* Para centrar el texto en el medio del input */
+}
+
+.input-city::placeholder{ /* Para centrar el texto en el medio del input */
+  text-align: center;
+}
+
+.input-city:focus {
+  border-color: #8fced1;
+  box-shadow: 0px 0px 10px rgba(142, 174, 175, 0.5);
+}
+
+
+.weather-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
